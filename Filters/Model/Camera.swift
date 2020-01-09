@@ -41,10 +41,11 @@ class CameraDetection: NSObject {
     
     private func setPreviewLayer(with cameraView: UIView) {
         let previewLayer = AVCaptureVideoPreviewLayer(session: self.captureSession)
-        
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
+
         cameraView.layer.addSublayer(previewLayer)
         
-        previewLayer.frame = cameraView.frame
+        previewLayer.frame = cameraView.bounds
         
     }
     
@@ -64,8 +65,9 @@ class CameraDetection: NSObject {
     
     func setOutput() {
         let dataOutput = AVCaptureVideoDataOutput()
-//        dataOutput.videoSettings = [(kCVPixelBufferPixel as String) : NSNumber(value: kcvpixelformat)]
-        dataOutput.alwaysDiscardsLateVideoFrames = true
+        dataOutput.videoSettings = [((kCVPixelBufferPixelFormatTypeKey as NSString) as String):NSNumber(value:kCVPixelFormatType_32BGRA)]
+
+      dataOutput.alwaysDiscardsLateVideoFrames = true
         
         if captureSession.canAddOutput(dataOutput) {
             captureSession.addOutput(dataOutput)

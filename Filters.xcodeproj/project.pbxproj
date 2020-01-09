@@ -17,6 +17,8 @@
 		645F100723C719DC00BCA1D1 /* ImagePreviewFilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645F100623C719DC00BCA1D1 /* ImagePreviewFilterController.swift */; };
 		64D18F4D23C73E6300731D05 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D18F4C23C73E6300731D05 /* CollectionViewController.swift */; };
 		64D18F4F23C744FD00731D05 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D18F4E23C744FD00731D05 /* ColorCell.swift */; };
+		64D18F5523C7543300731D05 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D18F5423C7543300731D05 /* Filters.swift */; };
+		64D18F5823C75D5E00731D05 /* PreviewBL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D18F5723C75D5E00731D05 /* PreviewBL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		645F100623C719DC00BCA1D1 /* ImagePreviewFilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewFilterController.swift; sourceTree = "<group>"; };
 		64D18F4C23C73E6300731D05 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		64D18F4E23C744FD00731D05 /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
+		64D18F5423C7543300731D05 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		64D18F5723C75D5E00731D05 /* PreviewBL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewBL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +68,61 @@
 		645F0FEF23C7011200BCA1D1 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				64D18F5323C7542800731D05 /* Filters */,
+				64D18F5123C753E200731D05 /* Model */,
+				64D18F5023C753D100731D05 /* Controller */,
 				645F0FF023C7011200BCA1D1 /* AppDelegate.swift */,
 				645F0FF223C7011200BCA1D1 /* SceneDelegate.swift */,
-				645F0FF423C7011200BCA1D1 /* ViewController.swift */,
 				645F0FF623C7011200BCA1D1 /* Main.storyboard */,
 				645F0FF923C7011400BCA1D1 /* Assets.xcassets */,
 				645F0FFB23C7011400BCA1D1 /* LaunchScreen.storyboard */,
 				645F0FFE23C7011400BCA1D1 /* Info.plist */,
-				645F100423C7020200BCA1D1 /* Camera.swift */,
-				645F100623C719DC00BCA1D1 /* ImagePreviewFilterController.swift */,
-				64D18F4C23C73E6300731D05 /* CollectionViewController.swift */,
-				64D18F4E23C744FD00731D05 /* ColorCell.swift */,
 			);
 			path = Filters;
+			sourceTree = "<group>";
+		};
+		64D18F5023C753D100731D05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64D18F5623C75D5400731D05 /* Preview */,
+				64D18F5223C753F200731D05 /* Cells */,
+				645F0FF423C7011200BCA1D1 /* ViewController.swift */,
+				64D18F4C23C73E6300731D05 /* CollectionViewController.swift */,
+				645F100623C719DC00BCA1D1 /* ImagePreviewFilterController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64D18F5123C753E200731D05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				645F100423C7020200BCA1D1 /* Camera.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64D18F5223C753F200731D05 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				64D18F4E23C744FD00731D05 /* ColorCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		64D18F5323C7542800731D05 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				64D18F5423C7543300731D05 /* Filters.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		64D18F5623C75D5400731D05 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				64D18F5723C75D5E00731D05 /* PreviewBL.swift */,
+			);
+			path = Preview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +197,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				64D18F4D23C73E6300731D05 /* CollectionViewController.swift in Sources */,
+				64D18F5823C75D5E00731D05 /* PreviewBL.swift in Sources */,
+				64D18F5523C7543300731D05 /* Filters.swift in Sources */,
 				645F100723C719DC00BCA1D1 /* ImagePreviewFilterController.swift in Sources */,
 				64D18F4F23C744FD00731D05 /* ColorCell.swift in Sources */,
 				645F100523C7020200BCA1D1 /* Camera.swift in Sources */,

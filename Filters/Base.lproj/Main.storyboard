@@ -87,7 +87,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ciy-aL-8eO">
-                                <rect key="frame" x="8" y="679" width="398" height="112"/>
+                                <rect key="frame" x="8" y="671" width="398" height="120"/>
                                 <connections>
                                     <segue destination="Xui-qG-7PJ" kind="embed" id="Ylh-1v-hgP"/>
                                 </connections>
@@ -102,7 +102,7 @@
                             <constraint firstItem="whz-EN-yy4" firstAttribute="leading" secondItem="lj8-cD-dny" secondAttribute="leading" id="IGQ-Q0-pKV"/>
                             <constraint firstItem="kou-c3-jSB" firstAttribute="leading" secondItem="lj8-cD-dny" secondAttribute="leading" constant="8" id="JHR-7a-EZ9"/>
                             <constraint firstItem="lj8-cD-dny" firstAttribute="trailing" secondItem="whz-EN-yy4" secondAttribute="trailing" id="RNX-H1-vwP"/>
-                            <constraint firstItem="ciy-aL-8eO" firstAttribute="top" secondItem="whz-EN-yy4" secondAttribute="bottom" constant="8" id="Rcq-kV-OSN"/>
+                            <constraint firstItem="ciy-aL-8eO" firstAttribute="top" secondItem="whz-EN-yy4" secondAttribute="bottom" id="Rcq-kV-OSN"/>
                             <constraint firstItem="lj8-cD-dny" firstAttribute="bottom" secondItem="kou-c3-jSB" secondAttribute="bottom" constant="32" id="iNb-hE-eoD"/>
                             <constraint firstItem="lj8-cD-dny" firstAttribute="trailing" secondItem="kou-c3-jSB" secondAttribute="trailing" constant="8" id="q3B-DE-ikQ"/>
                             <constraint firstItem="lj8-cD-dny" firstAttribute="trailing" secondItem="ciy-aL-8eO" secondAttribute="trailing" constant="8" id="xzO-Jy-N4J"/>
@@ -123,11 +123,11 @@
             <objects>
                 <viewController id="Xui-qG-7PJ" customClass="CollectionViewController" customModule="Filters" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VOT-2M-xea">
-                        <rect key="frame" x="0.0" y="0.0" width="398" height="112"/>
+                        <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zkb-Am-QLU">
-                                <rect key="frame" x="0.0" y="0.0" width="398" height="112"/>
+                                <rect key="frame" x="0.0" y="0.0" width="398" height="120"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mme-kG-Npt">
                                     <size key="itemSize" width="164" height="72"/>
@@ -137,7 +137,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Qeg-5u-lFg" customClass="ColorCell" customModule="Filters" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="16.5" width="168" height="79"/>
+                                        <rect key="frame" x="0.0" y="20.5" width="168" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="prL-dq-QDl">
                                             <rect key="frame" x="0.0" y="0.0" width="168" height="79"/>

@@ -15,13 +15,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        camera = CameraDetection(cameraView: cameraView, delegate: self)
-              
-        camera?.startSession()
+      
         
     }
     
-
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        camera = CameraDetection(cameraView: cameraView, delegate: self)
+                    
+              camera?.startSession()
+    }
 
     @IBAction func captureImage(_ sender: Any) {
         camera?.takePic()
